@@ -1,6 +1,8 @@
 # ConvertToSymlink
 A right-click context menu option to convert any Windows shortcut into a symlink
 
+![image](https://github.com/Nerdsie/ConvertToSymlink/assets/1341449/cd182165-bf27-43e5-acee-8cd4d48dca0b)
+
 # Elevate.exe
 You will need https://github.com/PaoJiao/elevate because context menu options don't seem to run with admin privilages, which are required to create symlinks on windows apparently
 
@@ -18,6 +20,7 @@ You will need https://github.com/PaoJiao/elevate because context menu options do
 
 1) C:\path\to\elevate.exe -c powershell.exe -windowstyle hidden -ExecutionPolicy Bypass -File "C:\path\to\ConvertToSymlink.ps1" "%1"
 2) wscript.exe "C:\path\to\RunSilent.vbs" "%1"
-  -- If you use #2, make sure to update the paths in RunSilent.vbs
+
+   -- If you use #2, make sure to update the paths in RunSilent.vbs
 
 1 is simpler and doesn't require any editing of files but will flash 2 command promps for half a second. 2 is slightly more complicated but barely flashes 1 command prompt for just a moment.
